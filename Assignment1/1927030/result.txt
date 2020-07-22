@@ -1,0 +1,18 @@
+Student ID: 1927030
+Student Name: Nguyễn Hoàng Phúc
+
+Passed: 10/11
+Details:
+Testcase 001: Passed
+Testcase 010: Passed
+Testcase 020: Passed
+Testcase 030: Passed
+Testcase 040: Passed
+Testcase 050: Passed
+Testcase 060: Passed
+Testcase 070: Passed
+Testcase 080: Passed
+Testcase 090: Passed
+Testcase 100: Failed
+
+NOTE: run.txt can help you know your failure!

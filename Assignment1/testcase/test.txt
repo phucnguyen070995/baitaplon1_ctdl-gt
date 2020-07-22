@@ -1,0 +1,11 @@
+Candle dataCandle = FindingCandle->GetDataLink();
+dataCandle.getTime()
+0 time
+1 OP
+2 HP
+3 LP
+4 CP
+
+stof(dataCandle.getOP()), stof(dataCandle.getHP()), stof(dataCandle.getLP()), stof(dataCandle.getCP())
+
+stof(dataCandle.getCP()), stof(dataCandle.getOP())

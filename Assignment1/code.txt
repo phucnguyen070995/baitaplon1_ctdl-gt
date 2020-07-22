@@ -1,0 +1,58 @@
+Candle dataCandle = FindingCandle->GetDataLink();
+
+long timedataCandle = dataCandle.getTime();
+
+float OP = dataCandle.getOP();
+float HP = dataCandle.getHP();
+float LP = dataCandle.getLP();
+float CP = dataCandle.getCP();
+
+long timeA = stol(sp[3]);
+long timeB = stol(sp[4]);
+
+if (timeA == timedataCandle) {
+
+if (timedataCandle > timeB) {
+
+if (timedataCandle > timeA) {
+
+if (timeA <= timedataCandle && timedataCandle <= timeB) {
+
+stol(sp[n-2]) > stol(sp[n-1])
+
+OP, HP, LP, CP
+
+long timeA_ = stol(sp[3]);
+if (timeA_ <= timedataCandle && timedataCandle <= timeA) {
+
+Link<Candle> *LastCandle = FindingExchange->GetDataLink()->GetLastCandle();
+if (timeB < FindingCandle->GetDataLink()->getTime() || timeA > LastCandle->GetDataLink()->getTime()) {return 0;}
+
+//Kiem tra candle cuoi
+if (timeA < FindingCandle->GetDataLink()->getTime() || timeA > LastCandle->GetDataLink()->getTime()) {return 0;}
+if (timeA == LastCandle->GetDataLink()->getTime()) {
+	if (IsMB(LastCandle->GetDataLink()->getOP(), LastCandle->GetDataLink()->getHP(), LastCandle->GetDataLink()->getLP(), LastCandle->GetDataLink()->getCP())) {return 1;}
+}
+//
+
+Link<Candle> *FirstCandle = FindingExchange->GetDataLink()->GetFirstCandle();
+Link<Candle> *LastCandle = FindingExchange->GetDataLink()->GetLastCandle();
+if (timeB < FirstCandle->GetDataLink()->getTime() || timeA > LastCandle->GetDataLink()->getTime()) {return 0;}
+
+long timeIns = 0;
+	int OP = 0;
+	int HP = 0;
+	int LP = 0;
+	int CP = 0;
+
+bool isExchange(string, string);
+bool ProcessData::isExchange(string BC, string QC){
+	for (int i = 0; i < BC.length(); i++){
+		if (BC[i] < 'A' || BC[i] > 'Z') return false;
+	}
+	for (int i = 0; i < QC.length(); i++){
+		if (QC[i] < 'A' || QC[i] > 'Z') return false;
+	}
+	return true;
+}
+if (!isExchange(sp[1],sp[2])) {return -1;}
